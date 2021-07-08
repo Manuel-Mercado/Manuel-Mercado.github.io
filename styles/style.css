@@ -1,0 +1,140 @@
+html {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 25px;
+    line-height: 1.4;
+    background-color: black;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center;
+    justify-content: space-around;  */
+    /* position: relative;  */
+    /* list-style: none; */
+    /* margin: 0; */
+    padding: 20px;
+    /* padding-left: 0;  */
+    color: #fadd50;
+}
+
+@media (min-width: 1085px){
+    .nav {
+        display: flex;
+    }
+}
+  
+ul {
+    list-style: none;
+}
+  
+.nav li {
+    font-size: 30px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    /* background-color: gray; */
+    /* box-shadow: 0 0 2rem;  */
+    display: none;
+    padding: 15px;
+    position: absolute; 
+    /* float: none; */
+    top: 60px;
+    width: 250px;
+    z-index: 10;
+}
+
+.dropdown-menu#menu-3 {
+    left: 190px;
+    min-width: auto;
+  }
+
+.dropdown-menu#menu-4 {
+    left: 550px;
+    min-width: auto; 
+}
+
+.menu-header {
+    font-size: 20px;
+    margin: 0;
+    padding: 0 10px 8px 10px; 
+    text-transform: uppercase;
+    color: #fadd50;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-item-list {
+    margin: 0;
+    padding-left: 0;
+}
+
+.menu-item-list li a,
+.menu-item-list li a:visited,
+.menu-item-list li a:focus {
+  color: gray;
+  display: block;
+  padding: 10px; 
+  text-decoration: none;
+}
+
+.menu-item-list li a:hover {
+  /* background-color: black; */
+  color: #fadd50;
+}
+
+#fade-in-header {
+  display: none;
+  position: fixed;
+  top: 0;
+}
+
+#top-nav {
+  position: fixed;
+}
+
+.show {
+  display: block;
+}
+
+div {
+    display: block;
+}
+
+
+/* this is where the logo will be set */
+.logo {
+    height: 450px;
+    width: 400px;
+    padding: 35px;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+/* pictures will go here (carousel) */
+
+.picture-grid {
+    display: grid;
+    grid-template-areas: left center right;
+    grid-gap: 15px;
+    margin-top: 5%;
+    background-color: #e8e9ea;
+    padding: 30px;
+}
+
+.picture-grid-item {
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+}
+
+p {
+    font-size: 40px;
+    color: #fadd50;
+    text-align: center;
+}
