@@ -24,3 +24,4 @@ function closeMenus() {
     menu3Dropdown.classList.remove('show');
     menu4Dropdown.classList.remove('show');
 }
+

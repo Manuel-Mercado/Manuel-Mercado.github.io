@@ -2,11 +2,11 @@ html {
     font-family: 'Pinyon Script', cursive;
     font-size: 25px;
     line-height: 1.4;
-    background-color: black;
+    background-color: #080808;
 }
 
 .nav {
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -19,11 +19,24 @@ html {
 ul {
     list-style: none;
 }
+
+ul .menu-item-list {
+    display:inline-block;
+    margin-left: 15px;
+    position: relative;
+    text-align: center;
+}
   
 .nav li {
     font-size: 30px;
     margin: 0 20px;
     cursor: pointer;
+}
+
+@media (min-width: 1085px) {
+    .nav {
+        display: flex;
+    }
 }
 
 a {
@@ -42,35 +55,95 @@ div {
     display: block;
 }
 
-.furniture-img-1 {
-    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.etchandbolts.com%2Fblog%2Fwp-content%2Fuploads%2F2014%2F08%2F4625sofa-set-2.jpg&f=1&nofb=1");
+/* .furniture-img-2 {
+    background-image: url("images/claire.jpg");
+} */
+
+.sofa1 {
+    background-image: url("../img/aurora.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    /* width: 700px; */
+    border-radius: 10px;
 }
 
+.sofa2 {
+    background-image: url("../img/claire.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    /* width: 700px; */
+    border-radius: 10px;
+}
 
-.furniture-img {
-    background-size: cover; 
+.sofa3 {
+    background-image: url("../img/minnie.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    /* width: 500px; */
+    border-radius: 10px;
+}
+
+.sofa4 {
+    background-image: url("../img/daphne.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    /* width: 700px; */
+    border-radius: 10px;
+}
+
+.sofa5 {
+    background-image: url("../img/elsie.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    /* width: 500px; */
+    border-radius: 10px;
+}
+
+.sofa6 {
+    background-image: url("../img/winston.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    /* width: 500px; */
+    border-radius: 10px;
+}
+
+/* .furniture-img {
+    background-size: cover;  
     background-position: center center;
-    width: 100%;
-    height: 160px;
+    width: 125%;
+    height: 400px;
     position: relative;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-}
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+} */
 
 .furniture-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 15px;
-    background-color: black;
-    padding: 15px;
+    grid-template-columns: 1fr;
+    grid-gap: 1%;
+    background-color: #080808;
+    padding: 0px;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 500px) {
+    .furniture-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .furniture-item {
     background-color: #222224;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    height: 200px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 100%;
+    border-radius: 10px;
 }
 
 .item-info {
