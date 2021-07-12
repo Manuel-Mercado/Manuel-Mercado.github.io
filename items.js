@@ -25,3 +25,17 @@ function closeMenus() {
     menu4Dropdown.classList.remove('show');
 }
 
+let openIcon = document.querySelector('#menu-hamburger');
+let menu = document.querySelector(".menu");
+let closeIcon = document.querySelector('#menu-close')
+
+openIcon.addEventListener("click", openMenu);
+closeIcon.addEventListener("click", closeMenu);
+
+function openMenu () {
+    menu.classList.add("menu-open");
+  }
+  
+  function closeMenu () {
+    menu.classList.remove("menu-open");
+  }

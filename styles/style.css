@@ -39,19 +39,20 @@ div li {
 }
 
 .dropdown-menu {
-    /* background-color: gray; */
-    /* box-shadow: 0 0 2rem;  */
+    /* box-shadow: 0 0 2rem; 
+    background-color: gray;
+    opacity: 0.2; */
     display: none;
     padding: 15px;
     position: absolute; 
     /* float: none; */
-    top: 60px;
-    width: 250px;
-    z-index: 10;
+    top: 75px;
+    width: 300px;
+    z-index: 1;
 }
 
 .dropdown-menu#menu-3 {
-    left: 200px;
+    left: 125px;
     min-width: auto;
 
   }
@@ -61,14 +62,14 @@ div li {
     min-width: auto; 
 }
 
-.menu-header {
+/* .menu-header {
     font-size: 20px;
-    margin: 0;
-    padding: 0 10px 8px 10px; 
+    margin: 40px;
+    padding: 0px 10px 8px 10px; 
     text-transform: uppercase;
     color: #fadd50;
     font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 .menu-item-list {
     margin: 0;
@@ -79,13 +80,13 @@ div li {
 .menu-item-list li a:visited,
 .menu-item-list li a:focus {
   color: gray;
-  display: block;
+  display: inline-block;
   padding: 10px; 
   text-decoration: none;
 }
 
 .menu-item-list li a:hover {
-  /* background-color: black; */
+  background-color: black;
   color: #fadd50;
 }
 
@@ -112,7 +113,7 @@ div {
 .logo {
     height: 450px;
     width: 400px;
-    padding: 35px;
+    /* padding: 35px; */
     margin: auto;
     background-color: #080808;
     display: flex;
@@ -166,3 +167,90 @@ p {
     text-align: center;
 }
 
+.about {
+    margin: 65px;
+    padding-top: 2em;
+}
+
+.bio {
+    margin: 65px;
+} 
+
+.story {
+    font-size: 25px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+.ceo {
+    /* border-radius: 25px; */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    height: 450px;
+}
+
+.owner {
+    background-image: url("../img/owner.jpg");
+    background-size: cover;
+    width: 700px;
+}
+
+/* using off-canvas Navigation - hamburger code */
+.controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .menu-control {
+    fill: #fadd50;
+    margin: 25px;
+  }
+  
+  .menu {
+    background-color: #080808;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0.2;
+    overflow-y: scroll;
+    padding: 15px 30px;
+    position: fixed;
+    transition: all 0.35s ease-in-out;
+    transform: translateX(100%);
+    z-index: 10;
+  }
+  .menu-open {
+    transform: translateX(0%);
+    opacity: 0.8;
+  }
+  .menu a, .menu a:focus, .menu a:visited {
+    color: #fadd50;
+    display: block;
+    font-size: 35px;
+    margin: 25px auto;
+    text-align: right;
+    text-decoration: none;
+  }
+  .menu-close {
+    background-color: #fadd50;
+  }  
+
+  @media (min-width: 1085px) {
+    .controls {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1085px) {
+    .picture-grid-item {
+      flex-wrap: nowrap;
+    }
+  }
+
+ 
