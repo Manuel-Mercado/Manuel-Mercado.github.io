@@ -18,7 +18,7 @@ html {
     color: #fadd50;
 }
 
-@media (min-width: 1085px){
+@media (min-width: 1070px){
     .nav {
         display: flex;
     }
@@ -124,8 +124,8 @@ div {
 
 .picture-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));;
-    grid-gap: 5%;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 5px;
 }
 
 .sample-img {
@@ -138,15 +138,15 @@ div {
 .pictures {
   object-fit: contain;
   margin: 0 auto;
-  width: 650px;
+  width: 1fr;
   border-radius: 10px;
 
 }
 
 @media screen and (max-width: 1070px) {
   .picture-grid {
-      grid-template-columns: repeat(auto-fit, minmax(850px, 1fr));
-      /* margin-left: 20%; */
+      /* grid-template-columns: repeat(auto-fit, minmax(850px, 1fr)); */
+      /* margin-left: 1%; */
       display: grid;
       grid-gap: 2%;
   }
@@ -238,7 +238,7 @@ h2 {
     background-color: #fadd50;
   }  
 
-  @media (min-width: 1085px) {
+  @media (min-width: 1070px) {
     .controls {
       display: none;
     }
