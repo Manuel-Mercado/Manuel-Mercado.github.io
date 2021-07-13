@@ -114,7 +114,7 @@ div {
     height: 450px;
     width: 400px;
     /* padding: 35px; */
-    margin: auto;
+    margin: 0 auto;
     background-color: #080808;
     display: flex;
     justify-content: center;
@@ -125,7 +125,7 @@ div {
 .picture-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));;
-    grid-gap: 2%;
+    grid-gap: 5%;
 }
 
 .sample-img {
@@ -138,25 +138,30 @@ div {
 .pictures {
   object-fit: contain;
   margin: 0 auto;
-  width: 500px;
+  width: 650px;
   border-radius: 10px;
 
 }
 
 @media screen and (max-width: 1070px) {
-  .picture-grid{
+  .picture-grid {
       grid-template-columns: repeat(auto-fit, minmax(850px, 1fr));
-      margin-left; 20%;
+      /* margin-left: 20%; */
       display: grid;
       grid-gap: 2%;
   }
-  
+}
+
+.slogan {
+  position: relative;
+  top: 35px;
 }
 
 p {
     font-size: 30px;
     color: #fadd50;
     text-align: center;
+    font-weight: bold;
 }
 
 .about {
