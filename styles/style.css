@@ -123,46 +123,38 @@ div {
 /* pictures will go here (carousel) */
 
 .picture-grid {
-    /* display: grid; */
-    /* grid-template-areas: left center right; */
-    /* grid-gap: 20px; */
-    margin-top: 5%;
-    /* background-color: #080808; */
-    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));;
+    grid-gap: 2%;
 }
 
-.picture-grid-item {
-    /* background-color: #080808; */
-    border-radius: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 500px;
+.sample-img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+
 }
 
-.pictures1 {
-    background-image: url("../img/kw.jpg");
-    background-size: cover;
-    /* height: 400px; */
-    width: 30vw;
+.pictures {
+  object-fit: contain;
+  margin: 0 auto;
+  width: 500px;
+  border-radius: 10px;
+
 }
 
-.pictures2 {
-    background-image: url("../img/bride.jpg");
-    background-size: cover;
-    /* height: 400px; */
-    width: 30vw;
-}
-
-.pictures3 {
-    background-image: url("../img/Lia.jpg");
-    background-size: cover;
-    /* height: 400px; */
-    width: 30vw;
+@media screen and (max-width: 1070px) {
+  .picture-grid{
+      grid-template-columns: repeat(auto-fit, minmax(850px, 1fr));
+      margin-left; 20%;
+      display: grid;
+      grid-gap: 2%;
+  }
+  
 }
 
 p {
-    font-size: 40px;
+    font-size: 30px;
     color: #fadd50;
     text-align: center;
 }
@@ -247,10 +239,5 @@ h2 {
     }
   }
 
-  @media (min-width: 1085px) {
-    .picture-grid-item {
-      flex-wrap: nowrap;
-    }
-  }
 
  

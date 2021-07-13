@@ -56,121 +56,35 @@ div {
     display: block;
 }
 
-/* .furniture-img-2 {
-    background-image: url("images/claire.jpg");
-} */
-
-.sofa1 {
-    background-image: url("../img/aurora.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 300px;
-    /* width: 700px; */
+.sofa {
+    object-fit: contain;
+    margin: 0 auto;
+    /* height: 400px; */
+    width: 500px;
     border-radius: 10px;
 }
 
-.sofa2 {
-    background-image: url("../img/claire.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 300px;
-    /* width: 700px; */
+.sofa-img {
+    max-height: 100%;
+    max-width: 100%;
     border-radius: 10px;
 }
-
-.sofa3 {
-    background-image: url("../img/minnie.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 300px;
-    /* width: 500px; */
-    border-radius: 10px;
-}
-
-.sofa4 {
-    background-image: url("../img/daphne.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 300px;
-    /* width: 700px; */
-    border-radius: 10px;
-}
-
-.sofa5 {
-    background-image: url("../img/elsie.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 300px;
-    /* width: 500px; */
-    border-radius: 10px;
-}
-
-.sofa6 {
-    background-image: url("../img/winston.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 300px;
-    /* width: 500px; */
-    border-radius: 10px;
-}
-
-/* .furniture-img {
-    background-size: cover;  
-    background-position: center center;
-    width: 125%;
-    height: 400px;
-    position: relative;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-} */
 
 .furniture-grid {
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
-    grid-gap: 5%;
-    background-color: #080808;
-    padding: 0px;
-    top: 100px;
-    /* margin-bottom: 25px; */
+    grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+    grid-gap: 2%;  
+    /* margin-left: 10%; */
 }
 
-@media (min-width: 500px) {
-    .furniture-grid {
-        grid-template-columns: repeat(3, 1fr);
+@media screen and (max-width: 1070px) {
+    .furniture-grid{
+        grid-template-columns: repeat(auto-fit, minmax(850px, 1fr));
+        /* margin-left: 30%; */
+        display: grid;
+        grid-gap: 2%;
     }
-}
-
-.furniture-item {
-    background-color: #080808;
-    display: flex; 
-    flex-direction: column;
-    width: 100%;
-    /* border-radius: 10px; */
-}
-
-.item-info {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px 0px 0px 10px;
-    margin: 0px;
-}
-
-.item-name li {
-    list-style: none;
-    padding: 0px 0px 2px 0px;
-}
-
-.item-name {
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-}
-
-.item-name h3 {
-    margin: 0px;
-    padding: 5px 0px 0px 0px;
+    
 }
 
 h3 {
@@ -182,4 +96,9 @@ h3 {
     margin-inline-end: 0px;
     font-weight: bold;
     color: #fadd50
+}
+
+h4 {
+    color: #fadd50;
+    margin-top: 2px;
 }
