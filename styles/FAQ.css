@@ -1,0 +1,42 @@
+.accordion {
+    background-color: black;
+    color: #fadd50;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+  
+  
+  .active, .accordion:hover {
+    background-color: #7c2d7c;
+}
+  
+  
+  .answer {
+    padding: 0 18px;
+    background-color: #442057;
+    display: none;
+    overflow: hidden;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+  /* found the plus/minus on W3 schools site */
+
+  .accordion:after {
+    content: '\02795'; 
+    font-size: 13px;
+    color: #fadd50;
+    float: right;
+    margin-left: 5px;
+}
+  
+  .active:after {
+    content: "\2796"; 
+}
+
+
+
