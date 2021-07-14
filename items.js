@@ -32,10 +32,10 @@ let closeIcon = document.querySelector('#menu-close')
 openIcon.addEventListener("click", openMenu);
 closeIcon.addEventListener("click", closeMenu);
 
-function openMenu () {
+function openMenu() {
     menu.classList.add("menu-open");
-  }
-  
-  function closeMenu () {
+}
+
+function closeMenu() {
     menu.classList.remove("menu-open");
-  }
+}

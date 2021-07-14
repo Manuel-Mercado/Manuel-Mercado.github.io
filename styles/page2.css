@@ -34,7 +34,7 @@ ul .menu-item-list {
     cursor: pointer;
 }
 
-@media (min-width: 1085px) {
+@media (min-width: 1070px) {
     .nav {
         display: flex;
     }
@@ -72,7 +72,7 @@ div {
 
 .furniture-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 2%;  
     /* margin-left: 10%; */
 }

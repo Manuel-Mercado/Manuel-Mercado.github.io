@@ -3,6 +3,7 @@ html {
     font-size: 25px;
     line-height: 1.4;
     background-color: #080808;
+    /* margin: 20px; */
 }
 
 .nav {
@@ -112,7 +113,7 @@ div {
 /* this is where the logo will be set */
 .logo {
     height: 450px;
-    width: 400px;
+    width: 500px;
     /* padding: 35px; */
     margin: 0 auto;
     background-color: #080808;
@@ -198,9 +199,9 @@ h2 {
 
 /* using off-canvas Navigation - hamburger code */
 .controls {
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: relative;
+    top: 0px;
+    right: 15px;
   }
   
   .menu-control {
